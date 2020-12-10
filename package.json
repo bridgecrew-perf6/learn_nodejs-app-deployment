@@ -3,6 +3,7 @@
   "scripts": {
     "start": "node index.js"
   },
+  "main": "index.js",
   "private": true,
   "license": "MIT",
   "repository": {
