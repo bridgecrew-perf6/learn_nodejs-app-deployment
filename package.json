@@ -1,4 +1,5 @@
 {
+  "name": "learn_nodejs-app-deployment",
   "private": true,
   "scripts": {
     "start": "node index.js"
