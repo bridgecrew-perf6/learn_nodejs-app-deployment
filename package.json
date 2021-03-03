@@ -1,16 +1,13 @@
 {
-  "name": "learn_nodejs-app-deployment",
+  "private": true,
   "scripts": {
     "start": "node index.js"
   },
-  "main": "index.js",
-  "private": true,
-  "license": "MIT",
+  "dependencies": {
+    "express": "4.17.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yialo/learn-heroku_nodejs_deploy.git"
-  },
-  "dependencies": {
-    "express": "4.17.1"
   }
 }
