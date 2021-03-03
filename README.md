@@ -1,1 +1,1 @@
-# Learn Heroku NodeJS deploy
+# Learn NodeJS application deployment

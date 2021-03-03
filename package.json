@@ -1,5 +1,5 @@
 {
-  "name": "learn-heroku_nodejs_deploy",
+  "name": "learn_nodejs-app-deployment",
   "scripts": {
     "start": "node index.js"
   },
