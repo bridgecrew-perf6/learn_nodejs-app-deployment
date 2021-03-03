@@ -9,6 +9,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yialo/learn-heroku_nodejs_deploy.git"
+    "url": "git+https://github.com/yialo/learn_nodejs-app-deployment.git"
   }
 }
