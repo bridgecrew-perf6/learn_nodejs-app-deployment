@@ -2,7 +2,7 @@
 
 const express = require('express');
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT ?? 8080;
 
 const app = express();
 
@@ -31,5 +31,5 @@ app.get('/about', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server has been started on port ${PORT}`);
+  console.log(`Server has been started at http://localhost:${PORT}/`);
 });
