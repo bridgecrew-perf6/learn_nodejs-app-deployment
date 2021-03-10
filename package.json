@@ -4,11 +4,12 @@
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {
-    "express": "4.17.1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yialo/learn_nodejs-app-deployment.git"
+  },
+  "dependencies": {
+    "ronin-mocks": "0.1.6",
+    "ronin-server": "0.1.3"
   }
 }
