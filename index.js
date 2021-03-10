@@ -2,7 +2,7 @@
 
 const express = require('express');
 
-const PORT = process.env.PORT ?? 8080;
+const PORT = process.env.PORT;
 
 const app = express();
 
@@ -22,11 +22,11 @@ const createHeader = (pageName) => (
   </header>`
 );
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.end(createHeader('Home'));
 });
 
-app.get('/about', (req, res) => {
+app.get('/about', (_req, res) => {
   res.end(createHeader('About'));
 });
 
