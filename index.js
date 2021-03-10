@@ -1,9 +1,35 @@
 'use strict';
 
-const mocks = require('ronin-mocks');
-const ronin = require('ronin-server');
+const express = require('express');
 
-const server = ronin.server();
+const PORT = process.env.PORT;
 
-server.use('/', mocks.server(server.Router(), false, true));
-server.start();
+const app = express();
+
+const createHeader = (pageName) => (
+  `<header>
+    <h1>${pageName} page</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home page</a>
+        </li>
+        <li>
+          <a href="/about">About page</a>
+        </li>
+      </ul>
+    </nav>
+  </header>`
+);
+
+app.get('/', (_req, res) => {
+  res.end(createHeader('Home'));
+});
+
+app.get('/about', (_req, res) => {
+  res.end(createHeader('About'));
+});
+
+app.listen(PORT, () => {
+  console.log(`Server has been started at http://localhost:${PORT}/`);
+});
